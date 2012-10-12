@@ -39,13 +39,13 @@
         android:text="@string/ButtonClear" />
 
     <Button
-        android:id="@+id/BTlwc"
+        android:id="@+id/BTcreateNewWarrantyCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:onClick="onClick"
-        android:text="@string/ListWarrantyCardsButton" />
+        android:text="@string/ButtonNewWarrantyCard" />
 
 </RelativeLayout>

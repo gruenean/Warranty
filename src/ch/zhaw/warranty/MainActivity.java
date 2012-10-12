@@ -1,6 +1,7 @@
 package ch.zhaw.warranty;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.Menu;
@@ -33,9 +34,11 @@ public class MainActivity extends Activity {
         	Editable name = tfname.getText();
         	tfname.setText("huhu" +  name);
         	break;
-        case R.id.BTlwc:
+        case R.id.BTcreateNewWarrantyCard:
         	System.out.println("foobar");
-        	MyListActivity mla = new MyListActivity();
+        	
+        	Intent myIntent = new Intent(MainActivity.this, CardActivity.class);
+        	startActivity(myIntent);
         	break;
         }
       }
