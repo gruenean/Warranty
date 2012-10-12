@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Warranty</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="dbButton">Database</string>
+    <string name="NameHelp">Enter your Name</string>
+    <string name="ButtonSubmit">Submit</string>
+    <color name="myColor">#F5F5F5</color>
+    <string name="ButtonClear">Clear</string>
+    <string name="ListWarrantyCardsButton">List Warranty Cards</string>
+
+</resources>

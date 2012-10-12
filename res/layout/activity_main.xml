@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myColor"
+    android:onClick="onClick" >
+
+    <EditText
+        android:id="@+id/TFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/NameHelp" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/BTsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TFname"
+        android:onClick="onClick"
+        android:text="@string/ButtonSubmit" />
+
+    <Button
+        android:id="@+id/BTClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/BTsubmit"
+        android:onClick="onClick"
+        android:text="@string/ButtonClear" />
+
+    <Button
+        android:id="@+id/BTlwc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:onClick="onClick"
+        android:text="@string/ListWarrantyCardsButton" />
+
+</RelativeLayout>
