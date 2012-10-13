@@ -7,19 +7,18 @@ public class WarrantyCard {
 	private String imagePath;
 	private String createdAt;
 	private String validUntil;
-	private double price;
+	private String price;
 	private String reseller;
 
-	public WarrantyCard(long _id, String title, String description,String imagePath,
-			String createdAt, String validUntil, double price, String reseller) {
-		this._id = _id;
+	public WarrantyCard(String title, String description,String imagePath,
+			String createdAt, String validUntil, String price, String reseller) {
 		this.title = title;
 		this.description = description;
 		this.imagePath = imagePath;
 		this.createdAt = createdAt;
 		this.validUntil = validUntil;
 		this.price = price;
-		this.reseller = reseller;
+		this.reseller = reseller;		
 	}
 
 	public long get_id() {
@@ -46,7 +45,7 @@ public class WarrantyCard {
 		return validUntil;
 	}
 
-	public double getPrice() {
+	public String getPrice() {
 		return price;
 	}
 
