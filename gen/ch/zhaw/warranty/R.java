@@ -18,11 +18,13 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int BTClear=0x7f08000b;
-        public static final int BTcreateNewWarrantyCard=0x7f08000c;
-        public static final int BTsubmit=0x7f08000a;
+        public static final int BTClear=0x7f08000d;
+        public static final int BTcreateNewWarrantyCard=0x7f08000e;
+        public static final int BTsubmit=0x7f08000c;
         public static final int RelativeLayout1=0x7f080000;
-        public static final int TFname=0x7f080009;
+        public static final int TFname=0x7f08000b;
+        public static final int card_BTClear=0x7f080009;
+        public static final int card_BTDeleteAll=0x7f08000a;
         public static final int card_BTadd=0x7f080008;
         public static final int card_TBcreatedAt=0x7f080003;
         public static final int card_TBdesc=0x7f080004;
@@ -31,7 +33,7 @@ public final class R {
         public static final int card_TBtitle=0x7f080002;
         public static final int card_TBvalidTil=0x7f080005;
         public static final int editText1=0x7f080001;
-        public static final int menu_settings=0x7f08000d;
+        public static final int menu_settings=0x7f08000f;
     }
     public static final class layout {
         public static final int activity_card=0x7f030000;
@@ -43,6 +45,7 @@ public final class R {
     }
     public static final class string {
         public static final int ButtonClear=0x7f040005;
+        public static final int ButtonDeleteAllCards=0x7f040010;
         public static final int ButtonListWarrantyCards=0x7f040006;
         public static final int ButtonNewWarrantyCard=0x7f04000f;
         public static final int ButtonSubmit=0x7f040004;
