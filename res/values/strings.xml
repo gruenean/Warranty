@@ -19,5 +19,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_card">CardActivity</string>
     <string name="ButtonNewWarrantyCard">create new warranty card</string>
+    <string name="ButtonDeleteAllCards">Delete all cards</string>
 
 </resources>
