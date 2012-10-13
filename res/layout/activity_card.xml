@@ -89,7 +89,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/card.TBreseller"
         android:onClick="onClick"
-        android:text="@string/ButtonSubmit" />
+        android:text="@string/ButtonAdd" />
 
     <Button
         android:id="@+id/card.BTClear"

@@ -6,8 +6,6 @@
     <string name="NameHelp">Enter your Name</string>
     <string name="ButtonSubmit">Submit</string>
 
-    <color name="myColor">#F5F5F5</color>
-
     <string name="ButtonClear">Clear</string>
     <string name="ButtonListWarrantyCards">List Warranty Cards</string>
     <string name="txtTitle">Title</string>
@@ -16,9 +14,9 @@
     <string name="txtValidTil">Valid until</string>
     <string name="txtPrice">Price</string>
     <string name="txtReseller">Reseller</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_card">CardActivity</string>
     <string name="ButtonNewWarrantyCard">create new warranty card</string>
     <string name="ButtonDeleteAllCards">Delete all cards</string>
+    <string name="ButtonAdd">Add Card</string>
 
 </resources>
