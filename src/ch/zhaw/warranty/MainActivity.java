@@ -28,7 +28,14 @@ public class MainActivity extends Activity {
         	Intent myIntent = new Intent(MainActivity.this, CardActivity.class);
         	startActivity(myIntent);
         	break;
+        case R.id.BTListWarrantyCards:
+        	System.out.println("baaronly");
+        	
+        	Intent myIntent2 = new Intent(MainActivity.this, CardListActivity.class);
+        	startActivity(myIntent2);
+        	break;
         }
+        
       }
     
     

@@ -15,4 +15,15 @@
         android:onClick="onClick"
         android:text="@string/ButtonNewWarrantyCard" />
 
+    <Button
+        android:id="@+id/BTListWarrantyCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/BTcreateNewWarrantyCard"
+        android:layout_marginTop="17dp"
+        android:onClick="onClick"
+        android:text="@string/ButtonListAllWarrantyCards"  />
+
 </RelativeLayout>

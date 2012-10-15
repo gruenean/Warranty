@@ -5,7 +5,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="NameHelp">Enter your Name</string>
     <string name="ButtonSubmit">Submit</string>
-
     <string name="ButtonClear">Clear</string>
     <string name="ButtonListWarrantyCards">List Warranty Cards</string>
     <string name="txtTitle">Title</string>
@@ -18,5 +17,8 @@
     <string name="ButtonNewWarrantyCard">create new warranty card</string>
     <string name="ButtonDeleteAllCards">Delete all cards</string>
     <string name="ButtonAdd">Add Card</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_card_list">CardListActivity</string>
+    <string name="ButtonListAllWarrantyCards">List all warranty cards</string>
 
 </resources>
