@@ -5,13 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import ch.zhaw.warranty.database.TBLWarrantyConnector;
 
 public class MainActivity extends Activity {
 
+	public static TBLWarrantyConnector tblwarranty;
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        tblwarranty = new TBLWarrantyConnector(this);
+
     }   
 
     @Override
@@ -23,20 +28,25 @@ public class MainActivity extends Activity {
     public void onClick(View view) {
         switch (view.getId()) {
         case R.id.BTcreateNewWarrantyCard:
-        	System.out.println("foobar");
-        	
         	Intent myIntent = new Intent(MainActivity.this, CardActivity.class);
         	startActivity(myIntent);
         	break;
         case R.id.BTListWarrantyCards:
-        	System.out.println("baaronly");
-        	
         	Intent myIntent2 = new Intent(MainActivity.this, CardListActivity.class);
         	startActivity(myIntent2);
+        	break;
+        case R.id.BTDeleteAll:
+        	deleteAllCards();
         	break;
         }
         
       }
     
-    
+    /**
+     * deletes all saved cards
+     */
+    private void deleteAllCards() {
+    	tblwarranty.deleteAllCards();
+    	//listAllCards();
+    }
 }

@@ -102,4 +102,10 @@ public class TBLWarrantyConnector {
 		closeDB();
 		
 	}
+	
+	public void deleteCard(WarrantyCard card) {
+		openDB();
+		db.delete(TBLWarrantyHelper.TBL_NAME, "_id = " + card.get_id(), null);
+		closeDB();
+	}
 }

@@ -26,4 +26,15 @@
         android:onClick="onClick"
         android:text="@string/ButtonListAllWarrantyCards"  />
 
+    <Button
+        android:id="@+id/BTDeleteAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/BTListWarrantyCards"
+        android:layout_marginTop="18dp"
+        android:onClick="onClick"
+        android:text="@string/ButtonDeleteAllCards" />
+
 </RelativeLayout>

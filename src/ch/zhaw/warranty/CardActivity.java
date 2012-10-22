@@ -1,5 +1,6 @@
 package ch.zhaw.warranty;
 
+import java.net.DatagramPacket;
 import java.util.ArrayList;
 
 import android.app.Activity;
@@ -8,11 +9,10 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import ch.zhaw.warranty.card.WarrantyCard;
-import ch.zhaw.warranty.database.TBLWarrantyConnector;
 
 public class CardActivity extends Activity {
 	private EditText tbtitle,tbdesc,tbcreatedat,tbvalidtil,tbprice,tbreseller;
-	private TBLWarrantyConnector tblwarranty;
+//	private TBLWarrantyConnector tblwarranty;
 	
 
     @Override
@@ -25,7 +25,7 @@ public class CardActivity extends Activity {
         tbvalidtil = (EditText) findViewById(R.id.card_TBvalidTil);
         tbprice = (EditText) findViewById(R.id.card_TBprice);
         tbreseller = (EditText) findViewById(R.id.card_TBreseller);
-        tblwarranty = new TBLWarrantyConnector(this);
+//        tblwarranty = new TBLWarrantyConnector(this);
     }
 
     @Override
@@ -42,9 +42,6 @@ public class CardActivity extends Activity {
         case R.id.card_BTClear:
         	clearAllFields();
         	break;
-        case R.id.card_BTDeleteAll:
-        	deleteAllCards();
-        	break;
         }
       }
     
@@ -55,7 +52,7 @@ public class CardActivity extends Activity {
     	WarrantyCard card = new WarrantyCard(tbtitle.getText().toString(), 
     			tbdesc.getText().toString(), "/foobar/", tbcreatedat.getText().toString(), 
     			tbvalidtil.getText().toString(), tbprice.getText().toString(), tbreseller.getText().toString());
-    	tblwarranty.insertWarrantyCard(card);
+    	MainActivity.tblwarranty.insertWarrantyCard(card);
     	clearAllFields();
     	//TODO: listAllCards() - testing only.
     	listAllCards();
@@ -78,18 +75,12 @@ public class CardActivity extends Activity {
      * currently only syso's all cards
      */
     private void listAllCards() { 
-    	ArrayList<String> cards = tblwarranty.getAllCards();
+    	ArrayList<String> cards = MainActivity.tblwarranty.getAllCards();
     	
     	for (String card : cards) {
 			System.out.println("Card title is: " + card);
 		}
     }
     
-    /**
-     * deletes all saved cards
-     */
-    private void deleteAllCards() {
-    	tblwarranty.deleteAllCards();
-    	listAllCards();
-    }
+
 }

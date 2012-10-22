@@ -101,14 +101,4 @@
         android:onClick="onClick"
         android:text="@string/ButtonClear" />
 
-    <Button
-        android:id="@+id/card.BTDeleteAll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/card.BTClear"
-        android:onClick="onClick"
-        android:text="@string/ButtonDeleteAllCards" />
-
 </RelativeLayout>
