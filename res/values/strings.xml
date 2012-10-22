@@ -6,7 +6,6 @@
     <string name="NameHelp">Enter your Name</string>
     <string name="ButtonSubmit">Submit</string>
     <string name="ButtonClear">Clear</string>
-    <string name="ButtonListWarrantyCards">List Warranty Cards</string>
     <string name="txtTitle">Title</string>
     <string name="txtDesc">Description</string>
     <string name="txtCreatedAt">Created At</string>
